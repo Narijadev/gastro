@@ -1,0 +1,36 @@
+<p>list works!</p>
+<div class="container-fluid">
+  <h1 style="color: aliceblue;">Add</h1>
+  <div class="d-flex">
+    
+  </div>
+</div>
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Adresse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of friends">
+                <td class="text-left">{{ row.id }}</td> 
+                <td class="text-left">{{ row.title }}</td>
+                <td class="text-left">{{ row.content }}</td>
+                <td class="text-left">{{ row.image }}</td>
+                <td><a class="nav-link" [routerLink]="['/profil', row.id ]" href="#">Profil</a></td>
+                <td><a class="nav-link" [routerLink]="['/edit', row.id ]" href="#">Edit</a></td>
+                <td><a class="nav-link" [routerLink]="['/edit', row.id ]" href="#">Delete</a></td>
+               
+                <td>
+                  <button type="button" ></button>
+                </td>
+              </tr> 
+            </tbody>
+          </table>
+    </div>
+</div>

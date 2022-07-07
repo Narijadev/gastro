@@ -1,0 +1,12 @@
+<p>edit works!</p>
+<form #loginForm="ngForm" (ngSubmit)="updateData(loginForm.value)">
+    <div class="main">
+      <div class="input-fields">
+        <input name="title" ngModel placeholder="Title" id="title" type="text" class="input-field" />
+      </div>
+      <div class="input-fields">
+        <input name="content" ngModel placeholder="Content" id="content" type="text" class="input-field" />
+      </div>
+      <button>Update Data </button>
+    </div>
+  </form>
